@@ -1,0 +1,246 @@
+\documentclass[letterpaper,10.8pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-3pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingProjects}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} \mid {#2} & #3 \\
+      \textit{\small#4} & \textit{\small #5} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Sokolov Denis}} & Email : \href{mailto:volok-osos@mail.ru}{volok-osos@mail.ru}\\
+  \href{https://github.com/DenChika}{Github: https://github.com/DenChika}
+  & Mobile : +7-921-447-78-39 \\
+  & Telegram: \href{@Den_Chika}{@Den\_Chika}
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {ITMO University x Yandex}{ITMO, Saint-Petersburg}
+      {Master in High-load Systems Software}{Sept 2024 - Present}
+      
+      {\scriptsize \textit{Coursework: Algorithms and Data Structures, C$++$ programming,
+        \newline
+        Advanced Databases, SHAD Computer networks,
+        \newline
+        Distributed systems, Cloud Computing
+        \newline}}
+      
+    \resumeSubheading
+      {ITMO University}{ITMO, Saint-Petersburg}
+      {Bachelor in Information System and Technologies}{Sept 2020 - July 2024}
+
+        {\scriptsize \textit{Coursework: Programming Technologies, Multiprocessor Programming, Network Technologies, Development Tools,
+        \newline
+        Databases, Web Programming, Operating Systems, Algorithms and Data Structures}}
+        
+        {\scriptsize \textit{\href{https://drive.google.com/file/d/1uD8_QzQo3rfmnlANPsCHdnrO6ND_0by4/view?usp=sharing}{Diploma: Backend development of the application for automating the execution of raw materials assemblies}}}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Skills Summary}
+    \resumeSubHeadingListStart
+	\resumeSubItem{Languages}{Go, Python, C\#, JavaScript}
+	\resumeSubItem{Databases}{PostgreSQL, MongoDB, Sqlite, Redis}
+        \resumeSubItem{Technologies}{REST, gRPC, Git, Docker, CI/CD Gitlab, Kafka, Jira, OpenTelemetry}
+        \resumeSubItem{Frameworks}{Gin Gonic, Echo, Go-chi, jmoiron/sqlx, gomock, go-sqlxmock}
+    \resumeSubHeadingListEnd
+%-----------Experience-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+      \resumeSubheadingProjects
+    {{\underline{Notissimus}}}{Go, PostgreSQL, JavaScript}{Nov 2023 - Jan 2025}
+    {Software Engineer}{}
+    \begin{itemize}
+        \item {\textbf{Application Architecture and Development}}
+        \begin{itemize}
+            \item {Designed and developed an MVC multi-layered application architecture}
+            \item {Created database architecture compliant with the 3rd normal form (at least)}
+        \end{itemize}
+        \item {\textbf{Key Implementations}}
+        \begin{itemize}
+            \item {Developed an external service to save the history of updated components}
+            \item {Restricted users from switching between pages by implementing a chain of API calls}
+            \item {Integrated JavaScript scripts}
+        \end{itemize}
+        \item {\textbf{Project Support}}
+        \begin{itemize}
+            \item {Rapidly identified and fixed bugs in an unfamiliar project}
+            \item {Demonstrated projects to customers}
+        \end{itemize}
+    \end{itemize}
+    \resumeSubheadingProjects
+    {{\underline{Tinkoff}}}{C\#, ASP.NET Core, EFCore, PostgreSQL, OpenTelemetry, Jaeger}{June 2023 - Aug 2023}
+    {Backend Development, Intern}{}
+    \begin{itemize}
+        \item {\textbf{Service Stability and Testing}}
+        \begin{itemize}
+            \item {Enhanced the stability of several services through bug fixes}
+            \item {Wrote unit and integration tests for all modified code}
+        \end{itemize}
+        \item {\textbf{Distributed Tracing}}
+        \begin{itemize}
+            \item {Added distributed OpenTelemetry tracing in 2 team services and 8 services of neighboring teams}
+            \item {Collected traces for HTTP, ASP.NET Core, MediatR requests, and EF Core by integrating a new version of the NuGet package}
+            \item {Enabled trace monitoring in the Jaeger UI}
+        \end{itemize}
+    \end{itemize}
+    \resumeSubheadingProjects
+    {\href{https://github.com/DenChika/SourceKit/tree/IEquatableAnalyzer}
+    {\underline{ITMO SourceKit}}}{C\#, CodeAnalysis, Xunit}{May 2023}
+    {Backend Development, Intern}{}
+    \begin{itemize}
+        \item {Implemented an analyzer to ensure Dictionary keys implement the IEquatable interface (for the purpose of future students educational purposes)}
+        \item {Developed tests and samples to verify correctness}
+    \end{itemize}
+\resumeSubHeadingListEnd
+%-----------Courses-----------------
+\section{Courses}
+  \resumeSubHeadingListStart
+    \resumeSubheadingProjects
+    {{\underline{Ozon Tech Route 256}}}{C\#, ASP.NET Core, Dapper, PostgreSQL, Kafka, gRPC, Protobuf}{Feb 2023 - Apr 2023}
+    {Backend Development, Junior level}{}
+    \begin{itemize}
+        \item {Worked with databases using the Dapper framework and PostgreSQL}
+        \item {Implemented tasks requiring asynchronous or parallel execution}
+        \item {Facilitated asynchronous interaction of microservices using Kafka}
+        \item {Managed synchronous interaction of microservices using gRPC and Protobuf technology}
+        \item {Developed unit and integration tests}
+    \end{itemize}
+\resumeSubHeadingListEnd
+%-----------Achievements-----------------
+\section{Achievements}
+  \resumeSubHeadingListStart
+    \resumeSubheadingProjects
+    {\underline{YDB Distributed Tracing}}{Golang, OpenTelemetry, Grafana, YDB, testify}{Sep 2024 - June 2025}
+    {Contributing}{}
+    \begin{itemize}
+        \item {\href{https://github.com/ydb-platform/opentelemetry-collector-contrib/pull/1}{\textbf{Exporter of traces, logs and metrics}}}
+        \begin{itemize}
+            \item {Supporting YDB (Yandex DataBase) Open Telemetry exporter of metrics, logs and traces in columnar storage}
+            \item {Refactoring, updated metric scheme and new supported metric types: histogram, exp-histogram, summary}
+            \item {New types of authorization in YDB: writing within file, using service acccount and using metadata service}
+            \item {Unit and integration tests}
+        \end{itemize}
+        \item {\href{https://github.com/ydb-platform/ydb-grafana-datasource-plugin/pull/60}{\textbf{Grafana plugin for viewing}}}
+        \begin{itemize}
+            \item {Supported reading data from YDB and refactioring}
+            \item {Added Date и DateTime macros for YQL-queries}
+            \item {New converters from YDB-types to Go-types: base, string, serial, containers, Optional-types. Also included nested-types}
+            \item {Unit and integration tests}
+        \end{itemize}
+    \end{itemize}
+    
+    \resumeSubheadingProjects
+    {\href{https://cs-uni.ru/index.php?title=DDF23_\%D0\%9E\%D1\%87\%D0\%B5\%D0\%BD\%D1\%8C_\%D1\%83\%D0\%BC\%D0\%BD\%D1\%8B\%D0\%B9_\%D0\%B4\%D0\%BE\%D0\%BC}
+    {\underline{Yaiot}}}{Python, YDB, aiogram}{Nov 2024}
+    {Hackathon participant, Backend}{}
+    \begin{itemize}
+        \item {Implementing telegram bot for generating user-links of YandexSmartHome scenarios, that stores in YDB. Everyone who has this link can easily just click on it and run scenario}
+        \item {Audience award as a result}
+    \end{itemize}
+\resumeSubHeadingListEnd
+%-----------Projects-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheadingProjects
+    {\href{https://github.com/DenChika/NewYork-taxi-analytics}
+    {\underline{Taxi Analytics}}}{Golang, cobra, MongoDB, Kafka, confluent-kafka-go, Redis, go-redis}{Jan 2025}
+    {Own Development, Backend}{}
+    \begin{itemize}
+        \item {Getting data from NewYork taxi dataset and creating two MongoDb collections: raw data, trip start and end data separately using aggregation pipeline}
+        \item {Implementing horizontally-scaled service, that writes messages to Kafka with exactly once guarantee, turned off auto.commit and earliest auto.offset.reset}
+        \item {Reading data by Kafka-consumer and updating current state in Redis (amount of active trips by location id) with an emergency restart possibility}
+        \item {Selection from Redis for each district at the current time of the most popular district from which people trave}
+    \end{itemize}
+    
+    \resumeSubheadingProjects
+    {\href{https://github.com/DenChika/MyRedis}
+    {\underline{MyRedis}}}{Golang, Redis}{Aug 2024 - Present}
+    {Own Development, Backend}{}
+    \begin{itemize}
+        \item {Implemented RESP (Redis serialization protocol) that decodes client requests and encodes responses}
+        \item {Added PING, ECHO, GET, and SET (with 'px' expiry parameter) commands support, enabling execution from concurrent connections and handling multiple concurrent requests per connection}
+    \end{itemize}
+    
+\resumeSubHeadingListEnd
+
+\end{document}
